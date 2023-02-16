@@ -104,5 +104,6 @@ class PhotoFrame{
         
         
         System.out.println(sum);
+        sc.close();
     }
 }

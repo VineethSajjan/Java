@@ -33,8 +33,8 @@ public class uniquepaths
                 
                 
                 
-/*import java.util.*;
-public class Main
+import java.util.*;
+public class uniquepaths
 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -47,7 +47,8 @@ public class Main
             }
         }
         int dp[][] = new int[m][n];
-        System.out.println(count(arr,0,0));
+        System.out.println(count(arr,0,0,dp));
+        sc.close();
     }
     public static int count(int [][] arr,int i,int j,int dp[][]){
         int n=arr[0].length;
@@ -66,7 +67,6 @@ public class Main
         return dp[i][j] = down+right;
     }
 }
-                       Memorization*/
 
 
 
