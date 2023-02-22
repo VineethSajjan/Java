@@ -53,11 +53,11 @@ public class uniquepaths
     public static int count(int [][] arr,int i,int j,int dp[][]){
         int n=arr[0].length;
         int m=arr.length;
-        if(i == m-1 && j == n-1){
-            return 1;
-        }
         if(i>m-1 || j>n-1 || arr[i][j] == 1){
             return 0;
+        }
+        if(i == m-1 && j == n-1){
+            return 1;
         }
         if(dp[i][j]!=0){
             return dp[i][j];
