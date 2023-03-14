@@ -76,7 +76,8 @@ class MinProductSet {
 		int nums[]=new int[n];
 		for(int i=0;i<n;i++)
 			nums[i]=sc.nextInt();
-		System.out.println(new MinProductSet().minProduct(nums));		
+		System.out.println(new MinProductSet().minProduct(nums));	
+		sc.close();	
 	}
 }
 

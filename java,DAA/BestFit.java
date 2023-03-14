@@ -8,6 +8,7 @@ class BestFit{
             arr[i] = sc.nextInt();
         }
         System.out.println(max(arr,n));
+        sc.close();
     }
     public static int max(int [] arr,int n){
         int max=0;

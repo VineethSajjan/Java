@@ -12,6 +12,7 @@ public class reversesentance {
             sb.append(st.pop()+" ");
         }
         System.out.print(sb);
+        sc.close();
     }
 
 }

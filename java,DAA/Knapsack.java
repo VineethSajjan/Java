@@ -39,6 +39,7 @@ class Solution{
                 }
                 
                 System.out.println(getRes(arr,c));
+                sc.close();
                 
                 
             }

@@ -4,6 +4,7 @@ class partitionlabels{
         Scanner sc = new Scanner(System.in);
         String s = sc.next();
         System.out.print(print(s));
+        sc.close();
     }
     public static List<Integer> print(String s){
         Map<Character,Integer> h=new HashMap<>();

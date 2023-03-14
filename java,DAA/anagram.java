@@ -5,6 +5,7 @@ class anagram{
         String s= sc.next();
         String t = sc.next();
         System.out.println(anag(s,t));
+        sc.close();
     }
     public static boolean anag(String s,String t){
         char A[] = s.toCharArray();
