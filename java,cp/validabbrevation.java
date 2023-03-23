@@ -1,0 +1,38 @@
+import java.util.*;
+class validabbreviation
+{
+public boolean validWordAbbreviation(String word, String abbr)
+ {
+int i = 0, j = 0;
+while (i < word.length() && j < abbr.length()) 
+ {
+if (word.charAt(i) == abbr.charAt(j)) 
+ {
+++i;
+ ++j;
+continue;
+}
+if (abbr.charAt(j) <= '0' || abbr.charAt(j) > '9') 
+{
+return false;
+}
+int start = j;
+while (j < abbr.length() && abbr.charAt(j) >= '0' && abbr.charAt(j) <= '9') 
+{
+++j;
+}
+int num = Integer.valueOf(abbr.substring(start, j));
+i += num;
+}
+return i == word.length() && j == abbr.length();
+}
+public static void main(String args[])
+ {
+Scanner in = new Scanner(System.in);
+System.out.println("Enter word");
+String word = in.next();
+System.out.println("Enter Abbreviation");
+String abbrv = in.next();
+System.out.println(new validabbreviation().validWordAbbreviation(word,abbrv));
+in.close();
+} }
