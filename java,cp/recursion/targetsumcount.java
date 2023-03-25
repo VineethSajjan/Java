@@ -1,5 +1,5 @@
 import java.util.*;
-class combinationsum{
+class targetsumcount{
     static Set<Integer> h = new HashSet<>();
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
