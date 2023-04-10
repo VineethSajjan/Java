@@ -5,5 +5,6 @@ public class second {
         Scanner sc  = new Scanner(System.in);
         String s = sc.nextLine();
         System.out.print("Hello, "+""+s);
+        sc.close();
     }
 }
