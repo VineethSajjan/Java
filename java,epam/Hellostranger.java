@@ -1,4 +1,4 @@
-
+//package com.epam.rd.autotasks.meetstrangers;
 
 import java.io.IOException;
 import java.util.*;
@@ -11,20 +11,21 @@ public class Hellostranger {
 
         int n = sc.nextInt();
         sc.nextLine();
-        String arr[] = new String[n];
-        for(int i=0;i<n;i++){
-                arr[i] = sc.nextLine();
-        }
 
         if(n==0){
-            System.out.print("Oh, it looks like there is no one here");
+            System.out.println("Oh, it looks like there is no one here");
         }
 
         else if(n<0){
-            System.out.print("Seriously? Why so negative?");
+            System.out.println("Seriously? Why so negative?");
         }
         
         else{
+            String arr[] = new String[n];
+
+            for(int i=0;i<n;i++){
+                arr[i] = sc.nextLine();
+            }
             for(int i=0;i<n;i++){
                 System.out.println("Hello, "+arr[i]);
             }
@@ -32,4 +33,3 @@ public class Hellostranger {
         sc.close();
     }
 }
-
