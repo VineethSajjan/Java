@@ -51,7 +51,7 @@ true
 
 */
 import java.util.*;
-class Test{
+class word{
     public static void main (String[] args) {
         Scanner sc=new Scanner(System.in);
         String s=sc.nextLine();
