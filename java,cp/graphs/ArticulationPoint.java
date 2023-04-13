@@ -63,7 +63,7 @@ class ArticulationPoint {
 		int[] disc = new int[V];
 		int[] low = new int[V];
 		boolean[] isAP = new boolean[V];
-		int time = 0, par = -1;
+		int par = -1;
 
 		// Adding this loop so that the code works even if we are given disconnected graph
 		for (int u = 0; u < V; u++)
