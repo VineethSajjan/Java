@@ -38,5 +38,6 @@ class connextedcomponents{
             }
         }
         System.out.println(c);
+        sc.close();
     }
 }

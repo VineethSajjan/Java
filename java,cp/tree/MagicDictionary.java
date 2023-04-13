@@ -105,13 +105,14 @@ class MagicDictionary {
     }
     
     private boolean search(String word) {
+        char c[] = word.toCharArray();
         for(int j=0;j<word.length();j++){
-            for(int k=0;k<26;k++){
-                if(word.charAt(j)-'a'==k) continue;
-                StringBuilder sb = new StringBuilder(word);
-                sb.setCharAt(j,(char)(k+'a'));
-                String s = sb.toString();
-                if(findword(s)) return true;
+            for(char k='a';k<='z';k++){
+                if(c[j] == k) continue;
+                char v = c[j];
+                c[j] = k;
+                if(findword(new String(c))) return true;
+                c[j]=v;
             }
         }
         return false;
