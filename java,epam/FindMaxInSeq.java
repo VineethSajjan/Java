@@ -14,6 +14,7 @@ public class FindMaxInSeq {
                 max = Math.max(max,v);
             }
         }
+        sc.close();
         return max;
     }
 
